@@ -450,7 +450,7 @@ footer .social img {
   display: unset;
   z-index: 1222;
 }
-.scroll-to-top:hover {
+.scroll-to-top.show:hover {
   opacity: .8;
 }
 /* Scroll To Top */
