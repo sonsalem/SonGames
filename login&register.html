@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="This Site Is For Each Gamer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+  <!-- Googlr Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Boostrap Library -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <!-- Main File -->
+  <link rel="stylesheet" href="css/css-sonGames.css">
+  <title>Son Games</title>
+</head>
+<body class="login-page position-relative">
+  <!-- Strat Loging -->
+  <div class="login">
+    <div class="container w-100 position-relative">
+      <div class="d-flex position-absolute top-0 w-100 translate-middle-y justify-content-around buttons-log">
+        <div class="log-btn button rounded-5 py-1 text-center bg-border-gradien pointer t-duration active">Login</div>
+        <div class="register-btn button rounded-5 py-1 text-center bg-border-gradien pointer t-duration">Register</div>
+      </div>
+      <div class="card position-relative">
+        <div class="row rounded-10 log position-absolute start-0 top-0 w-100 h-100">
+          <div class="col-lg-6 text p-lg-4 p-3 h-100">
+            <div class="card-content">
+              <div class="logo-brand p-3 mb-3 w-fit rounded-circle">
+                <img src="img/logo-dark.png" alt="image" width="30px">
+              </div>
+              <div class="text-capitalize display-6 fw-bold mb-2">login</div>
+              <div class="c-gray">How do i get son games at?</div>
+              <form action="index.html" method="get" class="mt-4">
+                <label for="em-log" class="mb-2">Email*</label>
+                <input type="email" name="em-log" id="em-log" class="form-control rounded-5 mb-3 p-2">
+                <label for="pas-log" class="mb-2">Password*</label>
+                <input type="password" name="pas-log" id="pas-log" class="form-control rounded-5 p-2">
+                <div class="d-flex align-items-center justify-content-between my-3">
+                  <div class="d-flex align-items-center">
+                    <div class="check bg-border-gradien position-relative me-2 pointer t-duration rounded-10"></div>
+                    Remember Me
+                  </div>
+                  <span class="c-primary fw-bold text-capitalize">forget password?</span>
+                </div>
+                <input type="submit" class="bg-gradien form-control rounded-5 p-2 mb-3" value="login">
+                <div class="text-center text-capitalize mb-3">or sign with...</div>
+                <div class="social-log d-flex align-items-center justify-content-center p-2 bg-border-gradien bg-gradien-hover t-duration pointer rounded-5 mb-3">
+                  <img src="img/icons8-google-96.png" alt="image" width="20px" class="me-2">
+                  <div class="text-capitalize"> sign in with google</div>
+                </div>
+                <div class="social-log d-flex align-items-center justify-content-center p-2 bg-border-gradien bg-gradien-hover t-duration pointer rounded-5">
+                  <img src="img/Facebook_f_logo_(2019).svg.png" alt="image" width="20px" class="me-2">
+                  <div class="text-capitalize"> sign in with facebook</div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 image p-5 h-100 d-none d-lg-block">
+            <div class="image-content h-100 rounded-10 position-relative overflow-hidden">
+              <img src="img/login-2.png" alt="" class="img-fluid position-absolute bottom-0">
+              <div class="content-text rounded-10 position-absolute start-50 top-50 translate-middle p-3 text-capitalize fw-bold">
+                buy evary game you want to play on one place and for free
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-10 register position-absolute start-0 top-0 w-100 h-100 p-3">
+          <div class="logo-brand p-3 mb-3 w-fit rounded-circle">
+            <img src="img/logo-dark.png" alt="image" width="30px">
+          </div>
+          <div class="text-capitalize display-6 fw-bold mb-2">sign in</div>
+          <div class="c-gray">How do i get son games at?</div>
+          <form action="index.html" class="row mt-4 form-register" method="get">
+            <div class="col-xl-4 col-md-6">
+              <label for="us-register" class="mb-2">User Name*</label>
+              <input type="text" name="us-register" id="us-register" class="form-control rounded-5 mb-3 p-2" required plase="us-register">
+              <div class="alert alert-danger alret-filed w-100 fixed-top t-duration" role="alert" plase="us-register">
+                The User Name Is None
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6 position-relative">
+              <label for="em-register" class="mb-2">Email*</label>
+              <input type="email" name="em-register" id="em-register" class="form-control rounded-5 mb-3 p-2" required place="em-register">
+              <div class="alert alert-danger alret-filed w-100 fixed-top t-duration" role="alert" place="em-register">
+                The Email Name Is None
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <label for="date-register" class="mb-2">Date*</label>
+              <input type="date" name="date-register" id="date-register" class="form-control rounded-5 mb-3 p-2 dateInput" required>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <label for="select" class="mb-2">Gender*</label>
+              <select name="selcet-reg" id="selcet-reg" class="form-control rounded-5 p-2 pointer">
+                <option value="mail">Mail</option>
+                <option value="femail">Femail</option>
+              </select>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <label for="pas-register" class="mb-2">Password*</label>
+              <input type="password" name="pas-register" id="pas-register" class="form-control rounded-5 p-2 mb-3" minlength="6" required>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <label for="conmf-pas-register" class="mb-2">Conmform Password*</label>
+              <input type="password" name="pas-register" id="conmf-pas-register" class="form-control rounded-5 p-2 mb-3" minlength="6" required>
+            </div>
+            <div class="col-12 d-flex justify-content-center mb-4 mt-3">
+              <div class="col-xl-4 col-12">
+                <input type="submit" class="bg-gradien form-control rounded-5 p-2" value="Sign In">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="text-center text-capitalize mb-3">or sign with...</div>
+            </div>
+            <div class="col-md-6">
+              <div class="social-log d-flex align-items-center justify-content-center p-2 bg-border-gradien bg-gradien-hover t-duration pointer rounded-5 mb-3">
+                <img src="img/icons8-google-96.png" alt="image" width="20px" class="me-2">
+                <div class="text-capitalize"> sign in with google</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="social-log d-flex align-items-center justify-content-center p-2 bg-border-gradien bg-gradien-hover t-duration pointer rounded-5">
+                <img src="img/Facebook_f_logo_(2019).svg.png" alt="image" width="20px" class="me-2">
+                <div class="text-capitalize"> sign in with facebook</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Loging -->
+  <!-- Boostrap Library -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Main File -->
+  <script src="js/js-sonGames.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="dark">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,24 +23,39 @@
 <body>
   <!-- Start Header -->
   <header class="fixed-top">
-    <div class="container-fluid py-3 d-flex align-items-center tex-center justify-content-between justify-content-md-start flex-wrap">
+    <div class="container-fluid py-3 d-flex align-items-center tex-center flex-wrap">
       <div class="logo-brand">
-        <a href="https://web.facebook.com/salem.mamdouh.1257/">
-          <img src="img/logo-light.png" alt="logo-brand">
+        <a href="index.html">
+          <img src="img/logo-dark.png" alt="logo-brand">
         </a>
       </div>
-      <i class="fa-solid fa-circle-half-stroke pointer d-md-none darkTheme lead "></i>
-      <div class="toggle-menu pointer d-md-none me-4">
-        <i class="fa-solid fa-bars display-6"></i>
+      <div class="d-flex cart d-md-none gap-10 align-items-center ms-auto me-4 mx-md-auto">
+        <i class="fa-solid fa-circle-half-stroke pointer lightTheme lead "></i>
+        <a href="cart-page.html"><i class="fa-solid fa-cart-shopping t-duration pointer lead mt-1 ms-2"></i></a>
       </div>
-      <div class="links d-flex align-items-center mx-auto justify-content-center justify-content-md-start t-duration overflow-hidden">
-        <div class="search">
-          <input type="search" name="searchHeader" placeholder="Search Here..." class="form-control rounded-5">
+      <div class="links d-flex align-items-center mx-auto  justify-content-center justify-content-md-start t-duration overflow-hidden">
+        <form action="search.html" method="get">
+          <div class="search">
+            <input type="search" name="searchHeader" id="searchHeader" placeholder="Search Here..." class="form-control rounded-5">
+          </div>
+        </form>
+        <a href="index.html" class="ms-md-3 mt-3 mt-md-0 t-duration pointer">Discover</a>
+        <a href="browse.html" class="ms-md-3 mt-3 mt-md-0 t-duration c-gray c-white-hover pointer">Browse</a>
+        <a href="cart-page.html"><i class="fa-solid fa-cart-shopping ms-md-5 t-duration pointer d-none d-md-block lead"></i></a>
+        <i class="ms-3 fa-solid fa-circle-half-stroke pointer d-none d-md-block lightTheme lead"></i>
+      </div>
+      <div class="user-parent d-flex align-items-center">
+        <div class="toggle-menu pointer d-md-none me-4">
+          <i class="fa-solid fa-bars display-6"></i>
         </div>
-        <div class="ms-md-3 mt-3 mt-md-0 t-duration pointer">Discover</div>
-        <div class="ms-md-3 mt-3 mt-md-0 t-duration c-gray c-white-hover pointer">Browse</div>
-        <div class="ms-md-3 mt-3 mt-md-0 t-duration c-gray c-white-hover pointer">News</div>
-        <i class="ms-3 fa-solid fa-circle-half-stroke pointer d-none d-md-block darkTheme lead "></i>
+        <div class="d-flex gap-10">
+          <a href="login&register.html" class="login bg-border-gradien bg-gradien-hover px-3 py-1 rounded-5">Login</a>
+          <a href="login&register.html" class="sing bg-gradien px-3 py-1 rounded-5">Sing In</a>
+        </div>
+        <a href="user-profile.html" class="user d-flex align-items-center gap-10 ms-2">
+          <div class="name">Son</div>
+          <img src="img/user-img.png" alt="image" width="35px" class="rounded-5">
+        </a>
       </div>
     </div>
     <div class="prograss-header w-100">
@@ -55,13 +70,17 @@
         <div class="col-lg-9 contents">
           <div class="content overflow-hidden rounded-10 position-relative t-duration active">
             <img src="img/dbxv2_banner.webp" alt="Image" class="w-100 h-100 obj-cover">
-            <div class="position-absolute h-100 bottom-0 px-4 pe-md-0 ms-1 card-landing d-flex flex-column justify-content-center">
+            <div class="position-absolute h-100 bottom-0 px-4 pe-md-3 ms-1 card-landing d-flex flex-column justify-content-center">
               <img src="img/db-logo.png" alt="Image" class="mb-5 w-10 mt-3">
               <p class="m-0 mb-2 text-uppercase fs-13 text-light mix-diffrence lh-17">use the son games coupon to take 25% off</p>
               <p class="m-0 text-capitalize text-light mix-diffrence mb-4 lh-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit possimus repellat aliquam tenetur culpa repellendus minus aspernatur.</p>
               <div class="price text-light fs-13 mb-2">Starting at $79.99</div>
               <div class="d-flex flex-wrap gap-10 mb-2 justify-content-center justify-content-sm-start">
                 <a href="#" class="d-flex align-items-center justify-content-center bg-white c-black rounded-1 btn-land">Buy Now</a>
+                <form action="post" class=" d-flex align-items-center justify-content-center text-light fs-13 text-uppercase wish rounded-1 btn-land t-duration">
+                  <i class="fa-solid fa-circle-plus me-1"></i>
+                  <input type="submit" value="ADD  TO WISHLIST" class="h-100 bg-transparent">
+                </form>
                 <a href="" class="d-flex align-items-center justify-content-center text-light fs-13 text-uppercase wish rounded-1 btn-land">
                   <i class="fa-solid fa-circle-plus me-1"></i>
                   Add  to wishlist
@@ -133,9 +152,9 @@
             </div>
           </div>
           <div class="content overflow-hidden rounded-10 position-relative t-duration">
-            <img src="img/card-1.avif" alt="Image" class="w-100 h-100 obj-cover">
+            <img src="img/card-19.jpg" alt="Image" class="w-100 h-100 obj-cover">
             <div class="position-absolute h-100 bottom-0 px-4 pe-md-0 ms-1 card-landing d-flex flex-column justify-content-center">
-              <img src="img/logo-1.png" alt="Image" class="mb-5 w-10 mt-3">
+              <img src="img/logo-10.png" alt="Image" class="mb-5 w-10 mt-3">
               <p class="m-0 mb-2 text-uppercase fs-13 text-light lh-17">use the son games coupon to take 25% off</p>
               <p class="m-0 text-capitalize text-light mb-4 lh-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit possimus repellat aliquam tenetur culpa repellendus minus aspernatur.</p>
               <div class="price text-light fs-13 mb-2">Starting at $779.99</div>
@@ -148,28 +167,28 @@
         <div class="col-lg-3 mt-2 mt-lg-0">
           <div class="content-items d-flex flex-lg-column flex-wrap gap-10 justify-content-between gap-10 h-100">
             <div class="box p-2 d-flex t-duration rounded-10 pointer align-items-center w-100 active">
-              <img src="img/most-popluer.webp" alt="image" class="rounded-10">
+              <img src="img/most-popluer.webp" alt="image" class="rounded-10 obj-cover">
               <div class="text ms-3 text-capitalize">Dragon ball xenoverse 2</div>
             </div>
             <div class="box p-2 d-flex t-duration rounded-10 pointer align-items-center w-100">
-              <img src="img/card-small-2.webp" alt="image" class="rounded-10">
+              <img src="img/card-small-2.webp" alt="image" class="rounded-10 obj-cover">
               <div class="text ms-3 text-capitalize">The Outlast Triales</div>
             </div>
             <div class="box p-2 d-flex t-duration rounded-10 pointer align-items-center w-100">
-              <img src="img/card-small-3.webp" alt="image" class="rounded-10">
+              <img src="img/card-small-3.webp" alt="image" class="rounded-10 obj-cover">
               <div class="text ms-2 text-capitalize">System shock</div>
             </div>
             <div class="box p-2 d-flex t-duration rounded-10 pointer align-items-center w-100">
-              <img src="img/card-small-5.avif" alt="image" class="rounded-10">
+              <img src="img/card-small-5.avif" alt="image" class="rounded-10 obj-cover">
               <div class="text ms-3 text-capitalize">sins of a solar empire II</div>
             </div>
             <div class="box p-2 d-flex t-duration rounded-10 pointer align-items-center w-100">
-              <img src="img/card-small-4.avif" alt="image" class="rounded-10">
+              <img src="img/card-small-4.avif" alt="image" class="rounded-10 obj-cover">
               <div class="text ms-3 text-capitalize">Fortnight X Amoung Us</div>
             </div>
             <div class="box p-2 d-flex t-duration rounded-10 pointer align-items-center w-100">
-              <img src="img/card-small-1.avif" alt="image" class="rounded-10">
-              <div class="text ms-3 text-capitalize">start wars jedi</div>
+              <img src="img/card-19.jpg" alt="image" class="rounded-10 obj-cover">
+              <div class="text ms-3 text-capitalize">Dragon ball z kakrot</div>
             </div>
           </div>
         </div>
@@ -237,7 +256,7 @@
   <div class="trending section-padding-top">
     <div class="container">
       <div class="section-title position-relative text-light text-uppercase w-fit bg-main mb-5">Trending</div>
-      <div class="d-flex align-items-center flex-wrap gap-10 justify-content-center justify-content-xl-between">
+      <div class="d-flex align-items-center flex-wrap gap-10 justify-content-center justify-content-md-start">
         <div class="card-magic position-relative t-duration pointer position-relative">
           <div class="wrapper t-duration h-100">
             <img src="img/card-10.png" alt="image" class="w-100 h-100 obj-cover">
@@ -582,8 +601,8 @@
               <div class="font-weight-bold text-capitalize mb-2">Son goku (kakrot)</div>
               <div class="dec text-capitalize fs-13 mb-2 c-gray">son goku born om sayin plante but a war happend betwwen frezer (the lord of sayin plante) agnsit kakrot's father....</div>
               <div class="d-flex align-items-center justify-content-between mt-auto ">
-                <div class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">read more</div>
-                <div class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">related games</div>
+                <a href="charcter.html" class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">read more</a>
+                <a href="charcter.html#relatedGames" class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">related games</a>
               </div>
             </div>
           </div>
@@ -597,8 +616,8 @@
               <div class="font-weight-bold text-capitalize mb-2">Son Gohan (teen, ceil ark)</div>
               <div class="dec text-capitalize fs-13 mb-2 c-gray">the first child to kakrot, he is a half-breed Saiyan and one of the most prominent characters in the Dragon Ball series. He is the elder son of the...</div>
               <div class="d-flex align-items-center justify-content-between mt-auto">
-                <div class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">read more</div>
-                <div class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">related games</div>
+                <a href="charcter.html" class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">read more</a>
+                <a href="charcter.html#relatedGames" class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">related games</a>
               </div>
             </div>
           </div>
@@ -612,8 +631,8 @@
               <div class="font-weight-bold text-capitalize mb-2">Nartuo</div>
               <div class="dec text-capitalize fs-13 mb-2 c-gray">Naruto[a] is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki....</div>
               <div class="d-flex align-items-center justify-content-between mt-auto">
-                <div class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">read more</div>
-                <div class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">related games</div>
+                <a href="charcter.html" class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">read more</a>
+                <a href="charcter.html#relatedGames" class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">related games</a>
               </div>
             </div>
           </div>
@@ -627,8 +646,8 @@
               <div class="font-weight-bold text-capitalize mb-2">monke d lofy</div>
               <div class="dec text-capitalize fs-13 mb-2 c-gray">Monkey D. Luffy, also known as "Straw Hat Luffy" and commonly as "Straw Hat",[10] is the founder and captain of the increasingly infamous and powerful...</div>
               <div class="d-flex align-items-center justify-content-between mt-auto">
-                <div class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">read more</div>
-                <div class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">related games</div>
+                <a href="charcter.html" class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">read more</a>
+                <a href="charcter.html#relatedGames" class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">related games</a>
               </div>
             </div>
           </div>
@@ -642,8 +661,8 @@
               <div class="font-weight-bold text-capitalize mb-2">mikaela hyakuya</div>
               <div class="dec text-capitalize fs-13 mb-2 c-gray">Mikaela Hyakuya (百夜 ミカエラ, Hyakuya Mikaera) (In der deutschen Version des Mangas Mikael genannt) ist der Deuteragonist der....</div>
               <div class="d-flex align-items-center justify-content-between mt-auto">
-                <div class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">read more</div>
-                <div class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">related games</div>
+                <a href="charcter.html" class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">read more</a>
+                <a href="charcter.html#relatedGames" class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">related games</a>
               </div>
             </div>
           </div>
@@ -657,8 +676,8 @@
               <div class="font-weight-bold text-capitalize mb-2">yuu otosaka</div>
               <div class="dec text-capitalize fs-13 mb-2 c-gray">Yuu Otosaka (乙坂 有宇, Otosaka Yuu) is the main protagonist of the story and a first-year transfer student at Hoshinoumi Academy. He has...</div>
               <div class="d-flex align-items-center justify-content-between mt-auto">
-                <div class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">read more</div>
-                <div class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">related games</div>
+                <a href="charcter.html" class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">read more</a>
+                <a href="charcter.html#relatedGames" class="bg-main rounded-1 py-1 px-2 text-light fs-13 pointer me-2 text-capitalize w-fit">related games</a>
               </div>
             </div>
           </div>
@@ -1034,33 +1053,62 @@
   </div>
   <!-- End More Games -->
   <!-- Start Footer -->
-  <footer>
-    <div class="container py-4">
-    <div class="d-flex align-items-center justify-content-center justify-content-sm-between flex-column flex-sm-row">
-      <div class="logo-brand d-flex align-items-center flex-column flex-sm-row gap-10 mb-3 mb-sm-0">
-        <img src="img/logo-light.png" alt="">
-        <span class="c-gray">&copy; For Son Salem</span>
-      </div>
-      <div class="social d-flex align-items-center gap-10 me-4 me-sm-0">
-        <a href="https://web.facebook.com/salem.mamdouh.1257/">
-          <img src="img/Facebook_f_logo_(2019).svg.png" alt="image">
-        </a>
-        <a href="https://www.instagram.com/salem.mamdouh.1257/">
-          <img src="img/8e2a889fd455e2fb181f7f8f1407300e.webp" alt="image">
-        </a>
-        <a href="https://wa.me/201556617801">
-          <img src="img/icons8-whatsapp-96.png" alt="image">
-        </a>
-        <a href="mailto:salemmamdouh77777@gmail.com">
-          <img src="img/icons8-google-96.png" alt="image">
-        </a>
-        <a href="https://github.com/sonsalem">
-          <img src="img/icons8-github-128.png" alt="image">
-        </a>
-        </a>
+  <footer class=" position-relative bg">
+    <div class="container-fluid">
+      <div class="row justify-content-between pt-5">
+        <div class="col-xl-3 col-md-5 mb-5">
+          <img src="img/logo-dark.png" width="50px" class="img-fluid mb-4">
+          <p class="mb-4 text-gray">Lorem ipsum dolor sitamet consectur adipiscing Duis esollici tudin augue euismod. Nulla ullam dolor sitamet consectetur</p>
+          <div class="font-weight-bold mb-4">ACTIVE <span class="c-green">WITH US <i class="fa-solid fa-angles-right"></i></span></div>
+          <div class="social d-flex align-items-center gap-10 me-4 me-sm-0">
+            <a href="https://web.facebook.com/salem.mamdouh.1257/">
+              <img src="img/Facebook_f_logo_(2019).svg.png" alt="image">
+            </a>
+            <a href="https://www.instagram.com/salem.mamdouh.1257/">
+              <img src="img/8e2a889fd455e2fb181f7f8f1407300e.webp" alt="image">
+            </a>
+            <a href="https://wa.me/201556617801">
+              <img src="img/icons8-whatsapp-96.png" alt="image">
+            </a>
+            <a href="mailto:salemmamdouh77777@gmail.com">
+              <img src="img/icons8-google-96.png" alt="image">
+            </a>
+            <a href="https://github.com/sonsalem">
+              <img src="img/icons8-github-128.png" alt="image">
+            </a>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-5 mb-5">
+          <div class="text-light mb-4 lead font-weight-bold">QUICK LINK</div>
+          <ul>
+            <li><a href="index.html" class="c-gray mb-2 c-primary-hover t-duration">Home</a></li>
+            <li><a href="browse.html" class="c-gray mb-2 c-primary-hover t-duration">Browse</a></li>
+            <li><a href=login&register.html" class="c-gray mb-2 c-primary-hover t-duration">Log In Or Sign In<li>
+            <li><a href="user-profile.html" class="c-gray mb-2 c-primary-hover t-duration">Profile</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-5 mb-5">
+          <div class="text-light mb-4 lead font-weight-bold">Most Searched</div>
+          <ul>
+            <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">dragon ball xenoverse 2</a></li>
+            <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">dragon ball xenoverse</a></li>
+            <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">Nartuo Storm 4</a></li>
+            <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">Nartuo Storm 3</a></li>
+            <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">one piece pirate warriors 4</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-5 mb-5">
+          <div class="text-light mb-4 lead font-weight-bold">NEWSLETTER</div>
+          <p class="text-gray mb-4">Subscribe our newsletter to get our latest update &amp; newsconsectetur</p>
+          <div class="input-group">
+            <input type="text" class="form-control border border-end-0" placeholder="Recipient's username" aria-label="Get News &amp; Update">
+            <span class="input-group-text c-green rounded-0 border-0 p-3 px-4 c-primary"><i class="fa-solid fa-paper-plane"></i></span>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
+    <p class="text-center Copyright py-4">Copyright © 2023 SonGames  Co., Ltd. All Rights Reserved. Designed by <span class="c-primary">SonGames</span> & <span class="c-primary">Abdelrhman Mohamed</span></p>
   </footer>
   <!-- End Footer -->
   <!-- open img -->
@@ -1068,11 +1116,6 @@
     <img src="" alt="image">
   </div>
   <!-- open img -->
-  <!-- Scroll To Top -->
-  <div class="scroll-to-top position-fixed d-flex align-items-center justify-content-center rounded-10 text-light bg-main t-duration pointer">
-    <i class="fa-solid fa-angle-up"></i>
-  </div>
-  <!-- Scroll To Top -->
   <script src="js/bootstrap.min.js"></script>
   <!-- Main File -->
   <script src="js/js-sonGames.js"></script>

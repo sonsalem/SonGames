@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="This Site Is For Each Gamer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+  <!-- Googlr Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Boostrap Library -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <!-- Main File -->
+  <link rel="stylesheet" href="css/css-sonGames.css">
+  <title>Son Games</title>
+</head>
+<body>
+  <!-- Start Header -->
+  <header class="fixed-top">
+    <div class="container-fluid py-3 d-flex align-items-center tex-center flex-wrap">
+      <div class="logo-brand">
+        <a href="index.html">
+          <img src="img/logo-dark.png" alt="logo-brand">
+        </a>
+      </div>
+      <div class="d-flex cart d-md-none gap-10 align-items-center ms-auto me-4 mx-md-auto">
+        <i class="fa-solid fa-circle-half-stroke pointer lightTheme lead "></i>
+        <a href="charcter.html"><i class="fa-solid fa-cart-shopping t-duration pointer lead mt-1 ms-2"></i></a>
+      </div>
+      <div class="links d-flex align-items-center mx-auto  justify-content-center justify-content-md-start t-duration overflow-hidden">
+        <form action="search.html" method="get">
+          <div class="search">
+            <input type="search" name="searchHeader" id="searchHeader" placeholder="Search Here..." class="form-control rounded-5">
+          </div>
+        </form>
+        <a href="index.html" class="ms-md-3 mt-3 mt-md-0 t-duration pointer">Discover</a>
+        <a href="browse.html" class="ms-md-3 mt-3 mt-md-0 t-duration c-gray c-white-hover pointer">Browse</a>
+        <a href="#"><i class="fa-solid fa-cart-shopping ms-md-5 t-duration pointer d-none d-md-block lead"></i></a>
+        <i class="ms-3 fa-solid fa-circle-half-stroke pointer d-none d-md-block lightTheme lead"></i>
+      </div>
+      <div class="user-parent d-flex align-items-center">
+        <div class="toggle-menu pointer d-md-none me-4">
+          <i class="fa-solid fa-bars display-6"></i>
+        </div>
+        <div class="d-flex gap-10">
+          <a href="login&register.html" class="login bg-border-gradien bg-gradien-hover px-3 py-1 rounded-5">Login</a>
+          <a href="login&register.html" class="sing bg-gradien px-3 py-1 rounded-5">Sing In</a>
+        </div>
+        <a href="user-profile.html" class="user d-flex align-items-center gap-10 ms-2">
+          <div class="name">Son</div>
+          <img src="img/user-img.png" alt="image" width="35px" class="rounded-5">
+        </a>
+      </div>
+    </div>
+    <div class="prograss-header w-100">
+      <div class="background h-100 bg-main t-duration"></div>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- start Cart -->
+  <div class="cart-shopping section-padding-top my-5">
+    <div class="container">
+      <div class="row bg-header cart-content">
+        <div class="col-lg-6 p-5">
+          <div class="lead fw-bold mb-4">My Orders</div>
+          <!-- Strat Order -->
+          <div class="row align-items-center mb-3 cloneItem justify-content-center" value="600">
+            <div class="col-sm-2 mb-2 mb-sm-0 image text-center">
+              <img src="img/card-game-10avif.avif" alt="image" width="70px" height="50px" class="rounded-10 obj-cover">
+            </div>
+            <div class="col-sm-8 col-auto ps-lg-4 ps-xl-0 text">
+              <div class="c-gray fs-13 text-capitalize">base game</div>
+              <div class="text-capitalize text-truncate">Quest Hunter</div>
+            </div>
+            <div class="col-sm-2 col-auto">
+              <form action="#" method="get" class="input-group number-items m-auto position-relative w-fit bg-body rounded-1 ms-auto" style="width: 100px;">
+                <input type="submit" value="" class="px-3 py-1 bg-transparent deletGame" style="z-index: 2;">
+                <i class="fa-solid fa-xmark position-absolute start-50 top-50 translate-middle" style="color: red !important;"></i>
+              </form>
+            </div>
+          </div>
+          <div class="row align-items-center mb-3 cloneItem justify-content-center" value="600">
+            <div class="col-sm-2 mb-2 mb-sm-0 image text-center">
+              <img src="img/card-game-8.avif" alt="image" width="70px" height="50px" class="rounded-10 obj-cover">
+            </div>
+            <div class="col-sm-8 col-auto ps-lg-4 ps-xl-0 text">
+              <div class="c-gray fs-13 text-capitalize">base game</div>
+              <div class="text-capitalize text-truncate">Quest Hunter</div>
+            </div>
+            <div class="col-sm-2 col-auto">
+              <form action="#" method="get" class="input-group number-items m-auto position-relative w-fit bg-body rounded-1 ms-auto" style="width: 100px;">
+                <input type="submit" value="" class="px-3 py-1 bg-transparent deletGame" style="z-index: 2;">
+                <i class="fa-solid fa-xmark position-absolute start-50 top-50 translate-middle" style="color: red !important;"></i>
+              </form>
+            </div>
+          </div>
+          <!-- End Order -->
+          <div class="lead fw-bold mb-2 mt-5">Access This Later</div>
+          <p class="m-0 fs-13 mb-2">You Should Write Your Password To Complete Checkout</p>
+          <form action="#" method="get">
+            <input type="email" name="em-buy" id="em-buy" class="form-control rounded-1 mb-3 p-2" placeholder="Write Your Password..">
+            <div class="d-flex flex-wrap justify-content-between gap-10 align-items-center">
+              <div class="c-gray fs-13">8 Character Minmum</div>
+              <input type="submit" class="bg-border-gradien bg-gradien-hover form-control w-fit rounded-1 py-2 px-4 t-duration" value="Check">
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6 p-5 bg-body">
+          <div class="image text-center mb-3">
+            <img src="img/user-img.png" alt="image" width="60px" height="60px" class="rounded-circle">
+            <div class="lead"><span class="fw-bold">Orders</span> #0001</div>
+          </div>
+          <div class="d-flex align-items-center justify-content-center gap-10 mb-4">
+            <div class="box d-flex paid">
+              <div class="fw-bold me-2">Status: </div>
+              <div><i class="fa-regular fa-circle-check c-primary fs-13"></i> paid</div>
+            </div>
+            <!-- <div class="box d-flex unpaid">
+              <div class="fw-bold me-2">Status: </div>
+              <div><i class="fa-regular fa-circle-xmark fs-13" style="color: red;"></i> unpaid</div>
+            </div> -->
+            <div class="box d-flex date-check">
+              <div class="fw-bold me-2">Date: </div>
+              <div>1 oct, 14:23</div>
+            </div>
+          </div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-header" type="button" data-bs-toggle="collapse" data-bs-target="#accr-one" aria-expanded="true" aria-controls="accr-one">
+                  Ordre Summary
+                </button>
+              </h2>
+              <div id="accr-one" class="accordion-collapse show collapse">
+                <div class="accordion-body bg-body cloneItemPlace">
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-header" type="button" data-bs-toggle="collapse" data-bs-target="#accr-two" aria-expanded="true" aria-controls="accr-one">
+                  Price
+                </button>
+              </h2>
+              <div id="accr-two" class="accordion-collapse show collapse">
+                <div class="accordion-body bg-body cloneItemPlace">
+                  <div class="d-flex justify-content-between mb-2">
+                    <span>Subtotle</span>
+                    <div>ddk<span class="subtotle ms-1"></span></div>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <span>Discount</span>
+                    <div><span class="discount-order ms-1">20</span>%</div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span>Totle</span>
+                    <div>dkk<span class="totle-order ms-1"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-header" type="button" data-bs-toggle="collapse" data-bs-target="#accr-three" aria-expanded="true" aria-controls="accr-one">
+                  Timeline
+                </button>
+              </h2>
+              <div id="accr-three" class="accordion-collapse show collapse">
+                <div class="accordion-body bg-body cloneItemPlace">
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="d-flex">
+                      <i class="fa-solid fa-paper-plane me-2 position-relative" style="bottom: -5px;"></i>
+                      <div class="text">
+                        <p class="m-0">Order Created</p>
+                        <span class="fs-13 c-gray">1 oct, 14:23</span>
+                      </div>
+                    </div>
+                    <span class="email-sent">
+                      salemmamdouh77777@gmail.com
+                    </span>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="d-flex">
+                      <i class="fa-regular fa-circle-check c-primary me-2 position-relative" style="bottom: -5px;"></i>
+                      <div class="text">
+                        <p class="m-0">Email recipt sent</p>
+                        <span class="fs-13 c-gray">1 oct, 14:23</span>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <div>+dkk<span class="totle-order ms-1"></span></div>
+                      <span class="fs-13 c-gray">VISA *5545*</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Cart -->
+  <!-- Start Footer -->
+  <footer class=" position-relative bg">
+    <div class="container-fluid">
+      <div class="row justify-content-between pt-5">
+        <div class="col-xl-3 col-md-5 mb-5">
+          <img src="img/logo-dark.png" width="50px" class="img-fluid mb-4">
+          <p class="mb-4 text-gray">Lorem ipsum dolor sitamet consectur adipiscing Duis esollici tudin augue euismod. Nulla ullam dolor sitamet consectetur</p>
+          <div class="font-weight-bold mb-4">ACTIVE <span class="c-green">WITH US <i class="fa-solid fa-angles-right"></i></span></div>
+          <div class="social d-flex align-items-center gap-10 me-4 me-sm-0">
+            <a href="https://web.facebook.com/salem.mamdouh.1257/">
+              <img src="img/Facebook_f_logo_(2019).svg.png" alt="image">
+            </a>
+            <a href="https://www.instagram.com/salem.mamdouh.1257/">
+              <img src="img/8e2a889fd455e2fb181f7f8f1407300e.webp" alt="image">
+            </a>
+            <a href="https://wa.me/201556617801">
+              <img src="img/icons8-whatsapp-96.png" alt="image">
+            </a>
+            <a href="mailto:salemmamdouh77777@gmail.com">
+              <img src="img/icons8-google-96.png" alt="image">
+            </a>
+            <a href="https://github.com/sonsalem">
+              <img src="img/icons8-github-128.png" alt="image">
+            </a>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-5 mb-5">
+          <div class="text-light mb-4 lead font-weight-bold">QUICK LINK</div>
+          <ul>
+            <li><a href="index.html" class="c-gray mb-2 c-primary-hover t-duration">Home</a></li>
+            <li><a href="browse.html" class="c-gray mb-2 c-primary-hover t-duration">Browse</a></li>
+            <li><a href=login&register.html" class="c-gray mb-2 c-primary-hover t-duration">Log In Or Sign In<li>
+            <li><a href="user-profile.html" class="c-gray mb-2 c-primary-hover t-duration">Profile</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-5 mb-5">
+          <div class="text-light mb-4 lead font-weight-bold">Most Searched</div>
+          <ul>
+            <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">dragon ball xenoverse 2</a></li>
+            <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">dragon ball xenoverse</a></li>
+            <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">Nartuo Storm 4</a></li>
+            <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">Nartuo Storm 3</a></li>
+            <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">one piece pirate warriors 4</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-md-5 mb-5">
+          <div class="text-light mb-4 lead font-weight-bold">NEWSLETTER</div>
+          <p class="text-gray mb-4">Subscribe our newsletter to get our latest update &amp; newsconsectetur</p>
+          <div class="input-group">
+            <input type="text" class="form-control border border-end-0" placeholder="Recipient's username" aria-label="Get News &amp; Update">
+            <span class="input-group-text c-green rounded-0 border-0 p-3 px-4 c-primary"><i class="fa-solid fa-paper-plane"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center Copyright py-4">Copyright © 2023 SonGames  Co., Ltd. All Rights Reserved. Designed by <span class="c-primary">SonGames</span> & <span class="c-primary">Abdelrhman Mohamed</span></p>
+  </footer>
+  <!-- End Footer -->
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Main File -->
+  <script src="js/js-sonGames.js"></script>
+<script>
+// Clone Elemnts
+
+let orderCLone = document.querySelectorAll('.cloneItem');
+let orderCLoneImage = document.querySelectorAll('.cloneItem .image');
+let orderCLoneText = document.querySelectorAll('.cloneItem .text');
+let cloneItemPlace = document.querySelector('.cloneItemPlace');
+let deleteGame = document.querySelectorAll('.deletGame');
+
+
+for (let i = 0; i < orderCLone.length; i++) {
+orderCLone[i].id = `${i}`;
+deleteGame[i].id = `${i}`;
+}
+
+for (let i = 0; i < orderCLone.length; i++) {
+  let structer = document.createElement('div');
+  structer.classList.add('row', 'align-items-center', 'justify-content-center', 'mb-3', 'cloneItem');
+  structer.id = `${i}`
+
+  let priceCounter = document.createElement('div');
+  priceCounter.classList.add('col-sm-2', 'col-auto', 'fs-13', 'c-primary', 'text-center')
+
+  let spanParent = document.createElement('span');
+  let spanParentText = document.createTextNode('dkk ');
+  spanParent.append(spanParentText);
+
+  let spanCounetr = document.createElement('span');
+  spanCounetr.classList.add('priceOrder')
+  spanCounetr.textContent = orderCLone[i].getAttribute('value');
+  spanCounetr.setAttribute('value', `${orderCLone[i].getAttribute('value')}`)
+  spanParent.append(spanCounetr)
+
+  priceCounter.append(spanParent)
+
+  structer.append(orderCLoneImage[i].cloneNode(true))
+  structer.append(orderCLoneText[i].cloneNode(true))
+  structer.append(priceCounter)
+  cloneItemPlace.append(structer)
+}
+
+let subtotle = document.querySelector('.subtotle');
+let discount = document.querySelector('.discount-order');
+let totle = document.querySelectorAll('.totle-order');
+
+let calcPrice = () => {
+  let subtotleText = 0;
+  let subtotleTextAll =  document.querySelectorAll('span.priceOrder');
+  for (let i = 0; i < subtotleTextAll.length; i++) {
+    subtotleText += +subtotleTextAll[i].textContent
+  }
+  subtotle.innerHTML = subtotleText
+  totle.forEach(el => el.innerHTML = Math.floor(+subtotle.textContent - (+subtotle.textContent * +discount.textContent / 100)))
+}
+
+calcPrice()
+
+deleteGame.forEach(function (el) {
+  el.onclick = function () {
+    document.querySelectorAll('.cloneItem').forEach(ele => {
+      el.id == ele.id && ele.remove();
+      calcPrice()
+    })
+  }
+})
+console.log(subtotleText)
+</script>
+</body>
+</html>

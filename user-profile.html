@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="This Site Is For Each Gamer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+  <!-- Googlr Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Boostrap Library -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <!-- Main File -->
+  <link rel="stylesheet" href="css/css-sonGames.css">
+  <title>Son Games</title>
+</head>
+<body class="use-page user-profile">
+  <!-- Start Header -->
+  <header class="position-absolute w-100 bg-transparent border-0">
+    <div class="container-fluid py-3 d-flex align-items-center tex-center flex-wrap gap-10">
+      <div class="logo-brand">
+        <a href="index.html">
+          <img src="img/logo-light.png" alt="logo-brand">
+        </a>
+      </div>
+      <div class="d-flex cart gap-10 align-items-center ms-auto me-2 me-md-3 justify-content-end">
+        <a href="cart-page.html"><i class="fa-solid fa-cart-shopping t-duration pointer lead mt-1 ms-2"></i></a>
+      </div>
+      <div class="formSearch d-flex align-items-center me-auto me-md-3 justify-content-center justify-content-md-start t-duration overflow-hidden">
+        <form action="search.html" method="get">
+          <div class="search">
+            <input type="search" name="searchHeader" id="searchHeader" placeholder="Search Here..." class="form-control rounded-5">
+          </div>
+        </form>
+      </div>
+      <div class="user-parent d-flex align-items-center justify-content-end ms-auto ms-md-0">
+        <a href="#" class="user d-flex align-items-center gap-10">
+          <div class="name">Son</div>
+          <img src="img/user-img.png" alt="image" width="35px" class="rounded-5">
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Start Landing -->
+  <div class="landing-user position-relative">
+    <div class="container">
+      <div class="text-capitalize display-6 fw-bold mb-2">Hello Son</div>
+      <div class="">This is your profile page, You can edit your whole information or delete</div>
+      <div class="">You can check your cart and games</div>
+    </div>
+  </div>
+  <!-- End Landing -->
+  <!-- Strat Edit -->
+  <div class="edit position-relative">
+    <div class="container">
+      <form action="" class="row form-register" method="get">
+        <div class="row flex-column-reverse flex-xl-row">
+          <div class="col-xl-8 col-12">
+            <div class="edit-box rounded-10 p-4">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="lead fw-bold">My accouent</div>
+                <div class="text-light text-uppercase w-fit bg-main px-2 py-1 rounded-1">Setting</div>
+              </div>
+              <div class="row">
+                <div class="c-gray text-capitalize mb-4">user indroduction</div>
+                <div class="col-xl-4 col-md-6">
+                  <label for="us-edit" class="mb-2">User Name*</label>
+                  <input type="text" name="us-edit" id="us-edit" class="form-control bg-border-gradien rounded-5 mb-3 p-2" required value="Son Abdelrhman">
+                </div>
+                <div class="col-xl-4 col-md-6 position-relative">
+                  <label for="em-edit" class="mb-2">Email*</label>
+                  <input type="email" name="em-edit" id="em-edit" class="form-control bg-border-gradien rounded-5 mb-3 p-2" required value="test55@gmail.com">
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <label for="date-edit" class="mb-2">Date*</label>
+                  <input type="date" name="date-edit" id="date-edit" class="form-control bg-border-gradien rounded-5 mb-3 p-2 dateInput" required>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <label for="select-edit" class="mb-2">Gender*</label>
+                  <select name="selcet-edit" id="selcet-edit" class="form-control bg-border-gradien rounded-5 p-2 pointer">
+                    <option value="mail">Mail</option>
+                    <option value="femail">Femail</option>
+                  </select>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <label for="change-pas-edit1" class="mb-2">New Password 1*</label>
+                  <input type="password" name="change-pas-edit1" id="change-pas-edit1" class="form-control bg-border-gradien rounded-5 p-2 mb-3" minlength="6" required value="0000000000">
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <label for="change-pas-edit2" class="mb-2">New Password 2*</label>
+                  <input type="password" name="change-pas-edi2t" id="change-pas-edit2" class="form-control bg-border-gradien rounded-5 p-2 mb-3" minlength="6" required placeholder="Write A New Password">
+                </div>
+                <div class="c-gray text-capitalize my-4">Linked Accounts</div>
+                <div class="col-md-6 d-flex gap-10 mb03">
+                  <div class="logo-account rounded-10 d-flex align-items-center justify-content-center">
+                    <img src="img/icons8-google-96.png" alt="image" width="20px">
+                  </div>
+                  <input type="text" id="google-acc" class="form-control filed-accounet flex-grow-1 rounded-10" disabled value="salemmamdouh77777@gmail.com">
+                </div>
+                <div class="col-md-6 d-flex gap-10 mb-3">
+                  <div class="logo-account rounded-10 d-flex align-items-center justify-content-center">
+                    <img src="img/Facebook_f_logo_(2019).svg.png" alt="image" width="20px">
+                  </div>
+                  <input type="text" id="facebook-acc" class="form-control filed-accounet flex-grow-1 rounded-10" disabled value="facebook.com/salem.mamdouh.1257">
+                </div>
+                <div class="col-md-6 d-flex gap-10 mb-3">
+                  <div class="logo-account rounded-10 d-flex align-items-center justify-content-center">
+                    <img src="img/icons8-github-128.png" alt="image" width="20px">
+                  </div>
+                  <input type="text" id="github-acc" class="form-control filed-accounet flex-grow-1 rounded-10" disabled value="SonSalem">
+                </div>
+                <div class="col-md-6 d-flex gap-10 mb-3">
+                  <div class="logo-account rounded-10 d-flex align-items-center justify-content-center">
+                    <img src="img/icons8-github-128.png" alt="image" width="20px">
+                  </div>
+                  <input type="text" id="github-acc-2" class="form-control filed-accounet flex-grow-1 rounded-10" disabled value="7amota">
+                </div>
+                <div class="col-12 mt-3">
+                  <div class="col-xl-4 col-12">
+                    <input type="submit" class="bg-gradien form-control rounded-5 p-2" value="Save">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-12 mb-4">
+            <div class="profile-info-box p-4 rounded-10 mb-4">
+              <img src="img/user-img.png" alt="image" width="170px" class="mx-auto d-block mb-2">
+              <input class="custom-file-input position-relative form-control pb-4" type="file" val="Change Image" accept="image/*">
+              <div class="detailes d-flex gap-10 align-items-center justify-content-center mb-4">
+                <div class="box position-relative d-flex align-items-center flex-column me-3 pe-3">
+                  <div class="lead fw-bold">22</div>
+                  <div class="fw-bold">Friends</div>
+                </div>
+                <div class="box position-relative d-flex align-items-center flex-column me-3 pe-3">
+                  <div class="lead fw-bold">17</div>
+                  <div class="fw-bold">Games</div>
+                </div>
+                <div class="box position-relative d-flex align-items-center flex-column">
+                  <div class="lead fw-bold">220</div>
+                  <div class="fw-bold">WhishList</div>
+                </div>
+              </div>
+              <div class="c-gray text-capitalize mb-2">Places..</div>
+              <div class="d-flex gap-10 align-items-center mb-2">
+                <div class="text">1st</div>
+                <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 12px; background-color: var(--bg-header);">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70% ; background-color: var(--main-color);">70%</div>
+                </div>
+              </div>
+              <div class="d-flex gap-10 align-items-center mb-2">
+                <div class="text">2st</div>
+                <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 12px; background-color: var(--bg-header);">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40% ; background-color: var(--main-color);">40%</div>
+                </div>
+              </div>
+              <div class="d-flex gap-10 align-items-center mb-2">
+                <div class="text">3th</div>
+                <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 12px; background-color: var(--bg-header);">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 25% ; background-color: var(--main-color);">25%</div>
+                </div>
+              </div>
+              <input type="submit" value="Log Out" class="bg-header mt-2 px-2 py-1 rounded-1 fw-bold" style="color: red !important;"/>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- End Edit -->
+    <!-- Start Footer -->
+    <footer class=" position-relative bg">
+      <div class="container-fluid pt-5">
+        <div class="row justify-content-between">
+          <div class="col-xl-3 col-md-5 mb-5">
+            <img src="img/logo-dark.png" width="50px" class="img-fluid mb-4">
+            <p class="mb-4 text-gray">Lorem ipsum dolor sitamet consectur adipiscing Duis esollici tudin augue euismod. Nulla ullam dolor sitamet consectetur</p>
+            <div class="font-weight-bold mb-4">ACTIVE <span class="c-green">WITH US <i class="fa-solid fa-angles-right"></i></span></div>
+            <div class="social d-flex align-items-center gap-10 me-4 me-sm-0">
+              <a href="https://web.facebook.com/salem.mamdouh.1257/">
+                <img src="img/Facebook_f_logo_(2019).svg.png" alt="image">
+              </a>
+              <a href="https://www.instagram.com/salem.mamdouh.1257/">
+                <img src="img/8e2a889fd455e2fb181f7f8f1407300e.webp" alt="image">
+              </a>
+              <a href="https://wa.me/201556617801">
+                <img src="img/icons8-whatsapp-96.png" alt="image">
+              </a>
+              <a href="mailto:salemmamdouh77777@gmail.com">
+                <img src="img/icons8-google-96.png" alt="image">
+              </a>
+              <a href="https://github.com/sonsalem">
+                <img src="img/icons8-github-128.png" alt="image">
+              </a>
+              </a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-5 mb-5">
+            <div class="text-light mb-4 lead font-weight-bold">QUICK LINK</div>
+            <ul>
+              <li><a href="index.html" class="c-gray mb-2 c-primary-hover t-duration">Home</a></li>
+              <li><a href="browse.html" class="c-gray mb-2 c-primary-hover t-duration">Browse</a></li>
+              <li><a href=login&register.html" class="c-gray mb-2 c-primary-hover t-duration">Log In Or Sign In<li>
+              <li><a href="user-profile.html" class="c-gray mb-2 c-primary-hover t-duration">Profile</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-5 mb-5">
+            <div class="text-light mb-4 lead font-weight-bold">Most Searched</div>
+            <ul>
+              <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">dragon ball xenoverse 2</a></li>
+              <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">dragon ball xenoverse</a></li>
+              <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">Nartuo Storm 4</a></li>
+              <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">Nartuo Storm 3</a></li>
+              <li><a href="search.html" class="c-gray mb-2 c-primary-hover t-duration text-capitalize">one piece pirate warriors 4</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-5 mb-5">
+            <div class="text-light mb-4 lead font-weight-bold">NEWSLETTER</div>
+            <p class="text-gray mb-4">Subscribe our newsletter to get our latest update &amp; newsconsectetur</p>
+            <div class="input-group">
+              <input type="text" class="form-control border border-end-0" placeholder="Recipient's username" aria-label="Get News &amp; Update">
+              <span class="input-group-text c-green rounded-0 border-0 p-3 px-4 c-primary"><i class="fa-solid fa-paper-plane"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center Copyright py-4">Copyright © 2023 SonGames  Co., Ltd. All Rights Reserved. Designed by <span class="c-primary">SonGames</span> & <span class="c-primary">Abdelrhman Mohamed</span></p>
+    </footer>
+    <!-- End Footer -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Main File -->
+  <script src="js/js-sonGames.js"></script>
+</body>
+</html>
