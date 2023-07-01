@@ -25,21 +25,21 @@ if (linksMenuA != undefined) {
 
 let light = document.querySelectorAll('.lightTheme');
 
-if (localStorage.getItem('state')) {
-  document.querySelector('html').id = `${localStorage.getItem('state')}`
+if (localStorage.getItem('theme')) {
+  document.querySelector('html').id = `${localStorage.getItem('theme')}`
 } else {
-  localStorage.setItem('state', 'dark');
+  localStorage.setItem('theme', 'dark');
 }
 
 document.addEventListener('click', function(e) {
   light.forEach(function(el) {
     if (e.target == el) {
-      if (localStorage.getItem('state') === 'dark') {
+      if (localStorage.getItem('theme') === 'dark') {
         document.querySelector('html').id = `light`
-        localStorage.setItem('state', 'light')
+        localStorage.setItem('theme', 'light')
       } else {
         document.querySelector('html').id = '';
-        localStorage.setItem('state', 'dark')
+        localStorage.setItem('theme', 'dark')
       }
       if (document.querySelector('html').id == 'light') {
         document.querySelector('.logo-brand img').setAttribute('src', 'img/logo-light.png');
